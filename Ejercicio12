@@ -1,0 +1,19 @@
+public class Ejercicio12 : MonoBehaviour
+{
+    public int[] numeros = { 4, 2, 4 };
+    void Start()
+    {
+        if (numeros[0] == numeros[2])
+        {
+            Debug.Log("El primero y el último son iguales");
+        }
+        else
+        {
+            Debug.Log("Son diferentes");
+        }
+    }
+    void Update()
+    {
+        
+    }
+}
