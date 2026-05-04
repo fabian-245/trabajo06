@@ -1,0 +1,17 @@
+public class Ejercicio13 : MonoBehaviour
+{
+    public int[] numeros = { 1, 2, 3 };
+    void Start()
+    {
+        int temp = numeros[0];
+        numeros[0] = numeros[2];
+        numeros[2] = temp;
+
+        Debug.Log("Nuevo valor en 0: " + numeros[0]);
+        Debug.Log("Nuevo valor en 2: " + numeros[2]);
+    }
+    void Update()
+    {
+        
+    }
+}
