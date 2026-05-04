@@ -1,0 +1,26 @@
+public class Ejercicio16 : MonoBehaviour
+{
+    [System.Serializable] public class Enemy
+    {
+        public int vida;
+        public Enemy(int v)
+        {
+            vida = v;
+        }
+    }
+    void Start()
+    {
+        Enemy[] enemigos = new Enemy[3];
+        enemigos[0] = new Enemy(100);
+        enemigos[1] = new Enemy(80);
+        enemigos[2] = new Enemy(120);
+
+        Debug.Log("Enemigo 0 vida: " + enemigos[0].vida);
+        Debug.Log("Enemigo 1 vida: " + enemigos[1].vida);
+        Debug.Log("Enemigo 2 vida: " + enemigos[2].vida);
+    }
+    void Update()
+    {
+
+    }
+}
