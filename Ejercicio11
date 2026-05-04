@@ -1,0 +1,19 @@
+public class Ejercicio11 : MonoBehaviour
+{
+    public float[] numeros = { 5f, 8f, 3f };
+    void Start()
+    {
+        if (numeros[0] > numeros[1])
+        {
+            Debug.Log("El mayor es: " + numeros[0]);
+        }
+        else
+        {
+            Debug.Log("El mayor es: " + numeros[1]);
+        }
+    }
+    void Update()
+    {
+        
+    }
+}
