@@ -1,19 +1,31 @@
 public class Ejercicio12 : MonoBehaviour
 {
+    List<string> inventario = new List<string>();
     public int[] numeros = { 4, 2, 4 };
     void Start()
     {
-        if (numeros[0] == numeros[2])
-        {
-            Debug.Log("El primero y el último son iguales");
-        }
-        else
-        {
-            Debug.Log("Son diferentes");
-        }
+        ComparadorDeNumeros(0, 1);
+        ComparadorDeNumeros(1, 2);
+        ComparadorDeNumeros(0, 2);
+
     }
     void Update()
     {
         
+    }
+    public void ComparadorDeNumeros(int pos1, int pos2)
+    {
+        if (numeros[pos1] > numeros[pos2])
+        {
+            Debug.Log("Mayor: " + numeros[pos1]);
+        }
+        else if (numeros[pos1] < numeros[pos2])
+        {
+            Debug.Log("Mayor: " + numeros[pos2]);
+        }
+        else
+        {
+            Debug.Log("Son iguales");
+        }
     }
 }
