@@ -1,14 +1,6 @@
 public class Ejercicio17 : MonoBehaviour
 {
     List<Enemy> enemigos = new List<Enemy>();
-    [System.Serializable] public class Enemy
-{
-        public int vida;
-        public Enemy(int v)
-        {
-            vida = v;
-        }
-}
     void Start()
     {
         AgregarEnemigo(100);
