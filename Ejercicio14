@@ -1,0 +1,24 @@
+public class Ejercicio14 : MonoBehaviour
+{
+    public int[] numeros = { 7, 9, 5 };
+    void Start()
+    {
+        int mayor = numeros[0];
+
+        if (numeros[1] > mayor)
+        {
+            mayor = numeros[1];
+        }
+
+        if (numeros[2] > mayor)
+        {
+            mayor = numeros[2];
+        }
+
+        Debug.Log("El mayor es: " + mayor);
+    }
+    void Update()
+    {
+        
+    }
+}
