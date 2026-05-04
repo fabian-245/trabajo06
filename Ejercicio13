@@ -3,9 +3,7 @@ public class Ejercicio13 : MonoBehaviour
     public int[] numeros = { 1, 2, 3 };
     void Start()
     {
-        int temp = numeros[0];
-        numeros[0] = numeros[2];
-        numeros[2] = temp;
+        IntercambiarValores(0, 2);
 
         Debug.Log("Nuevo valor en 0: " + numeros[0]);
         Debug.Log("Nuevo valor en 2: " + numeros[2]);
@@ -13,5 +11,11 @@ public class Ejercicio13 : MonoBehaviour
     void Update()
     {
         
+    }
+    void IntercambiarValores(int indice1, int indice2)
+    {
+        int temp = numeros[indice1];
+        numeros[indice1] = numeros[indice2];
+        numeros[indice2] = temp;
     }
 }
