@@ -1,0 +1,21 @@
+public class Ejercicio15 : MonoBehaviour
+{
+    public List<int> numeros = new List<int> { 10, 20, 30 };
+    void Start()
+    {
+        int valorBuscado = 20;
+
+        if (numeros[1] == valorBuscado)
+        {
+            Debug.Log("El valor coincide");
+        }
+        else
+        {
+            Debug.Log("El valor NO coincide");
+        }
+    }
+    void Update()
+    {
+        
+    }
+}
